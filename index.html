@@ -1,13 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <!-- ========== META ========== -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/" />
+
+    <!-- SEO -->
+    <title>Your Project | Crafted with Tailwind CSS</title>
+    <meta
+      name="description"
+      content="Showcase your professional background, skills, experiences, and achievements with a modern CV/Resume or portfolio design powered by Tailwind CSS."
+    />
+
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:site_name" content="Your Project Name" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:title"
+      content="Your Project | Tailwind CSS Portfolio Template"
+    />
+    <meta
+      property="og:description"
+      content="Highlight your expertise, career achievements, and projects in a sleek, responsive layout."
+    />
+    <meta
+      property="og:image"
+      content="https://yourdomain.com/assets/img/preview.png"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@yourhandle" />
+    <meta name="twitter:creator" content="@yourhandle" />
+    <meta
+      name="twitter:title"
+      content="Your Project | Tailwind CSS Portfolio Template"
+    />
+    <meta
+      name="twitter:description"
+      content="Highlight your expertise, career achievements, and projects in a sleek, responsive layout."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourdomain.com/assets/img/preview.png"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Preline CSS -->
+    <link
+      rel="stylesheet"
+      href="https://preline.co/assets/css/obfuscated.min.css?v=3.0.1"
+    />
+
+    <!-- Theme Mode (Light/Dark) -->
+    <script>
+      const html = document.documentElement;
+      const theme = localStorage.getItem("hs_theme") || "auto";
+
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const isDark = theme === "dark" || (theme === "auto" && prefersDark);
+      const isLight = theme === "light" || (theme === "auto" && !prefersDark);
+
+      html.classList.toggle("dark", isDark);
+      html.classList.toggle("light", isLight);
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- JS Plugins -->
+    <script src="https://preline.co/assets/vendor/preline/dist/index.js?v=3.0.1"></script>
+    <script src="https://preline.co/assets/vendor/clipboard/dist/clipboard.min.js"></script>
+    <script src="https://preline.co/assets/js/hs-copy-clipboard-helper.js"></script>
+
+    <!-- Analytics (Google Tag Manager) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXX");
+    </script>
+
+    <!-- App -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
