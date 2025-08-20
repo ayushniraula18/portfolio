@@ -1,4 +1,3 @@
-
 const Testimonial = () => {
   return (
     <>
@@ -8,24 +7,32 @@ const Testimonial = () => {
         </h2>
 
         <div className="ylm8n hjdn7 fafsg vyfcq h5xf1 lnk45 divide-y sm:divide-y-0 sm:divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
+          
+          {/* Testimonial 1 - Razat Shrestha */}
           <div className="hfus2 db8e5 or0yw">
             <blockquote>
               <span className="w4xo0 c9jt8 dark:text-neutral-200">
-                I'm absolutely floored by the level of care and attention to
-                detail Eliana has put into this project and for one can
-                guarantee that we will be a return customer.
+                I had the pleasure of mentoring Ayush during his time at MyPay. 
+                His strong command over the MERN stack, ability to design scalable 
+                solutions, and eagerness to learn set him apart. Ayush not only 
+                delivers quality code but also contributes ideas that improve the 
+                overall product. With his dedication and problem-solving mindset, 
+                I see him growing into a key software leader in the future.
               </span>
 
               <footer className="wc6fu">
                 <div className="flex items-center n9hej">
                   <img
-                    className="e731n yhc35 kghwt"
-                    src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                    alt="Avatar"
+                    className="e731n yhc35 kghwt" style={{height: "40px", width: "40px"}}
+                    src="/razat.png"
+                    alt="Razat"
                   />
                   <div className="hlt95">
                     <div className="xs2f2 jy5gh dark:text-neutral-500">
-                      Josh Grazioso
+                      Razat Shrestha <br />
+                      <span className="text-sm text-gray-400">
+                        Tech Lead @ <a href="https://thebigsolutions.com/" target="_blank" rel="noopener noreferrer" className="underline">The Big Solutions</a>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -33,23 +40,31 @@ const Testimonial = () => {
             </blockquote>
           </div>
 
+          {/* Testimonial 2 - Mantosh Sah */}
           <div className="db8e5 or0yw">
             <blockquote>
               <span className="w4xo0 c9jt8 dark:text-neutral-200">
-                To say that hiring Eliana has been life-changing is an
-                understatement. My business has tripled and I got my life back.
+                Ayush is one of the most reliable and detail-oriented developers 
+                I’ve worked with. His expertise in React and frontend development 
+                has been a huge asset to the projects we collaborated on. He 
+                approaches challenges with creativity and precision, ensuring 
+                high-quality results every time. I truly value his professionalism 
+                and problem-solving abilities.
               </span>
 
               <footer className="wc6fu">
                 <div className="flex items-center n9hej">
                   <img
-                    className="e731n yhc35 kghwt"
-                    src="https://images.unsplash.com/photo-1671726203390-cdc4354ee2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                    alt="Avatar"
+                    className="e731n yhc35 kghwt" style={{height: "40px", width: "40px"}}
+                    src="/mantosh.png"
+                    alt="Mantosh Sah"
                   />
                   <div className="hlt95">
                     <div className="xs2f2 jy5gh dark:text-neutral-500">
-                      Nicole Grazioso
+                      Mantosh Sah <br />
+                      <span className="text-sm text-gray-400">
+                        Sr. Frontend Engineer @ <a href="https://mypay.com.np/" target="_blank" rel="noopener noreferrer" className="underline">MyPay</a>
+                      </span>
                     </div>
                   </div>
                 </div>
