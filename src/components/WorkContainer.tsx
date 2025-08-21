@@ -1,107 +1,77 @@
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router";
 
 const WorkContainer = () => {
+  const [dots, setDots] = useState("");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDots((prev) => {
+        if (prev === "...") return "";
+        return prev + ".";
+      });
+    }, 500);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-   <>
-   
-
-    <div className="w-full vwt7a mx-auto beg37 fglch xf1r4 ids43">
-      <div className="space-y-8">
-        <h1 className="mp30q sikx1 c9jt8 dark:text-neutral-200">
-          Japanease art
-        </h1>
-
-        <p className="w4xo0 jy5gh dark:text-neutral-500">
-          Discover the beauty and elegance of traditional Japanese art through this captivating collection. From delicate brush paintings to intricate woodblock prints, each piece tells a story of cultural heritage and artistic mastery that has influenced art movements worldwide.
-        </p>
-
-        <div className="w-full taag7 tfa1w pb094 dark:bg-neutral-700">
-          <img className="fp3m4 x1s1r pb094" src="https://images.unsplash.com/photo-1585159812596-fac104f2f069?q=80&w=768&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hero Image" />
+    <div className="min-h-screen w-full flex items-center justify-center p-6 text-white">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="max-w-2xl mx-auto text-center"
+      >
+        {/* Animated construction icon */}
+        <div className="mb-10 relative flex justify-center">
+          <motion.div
+            animate={{ y: [0, -10, 0] }}
+            transition={{ repeat: Infinity, duration: 2 }}
+            className="text-8xl"
+          >
+            🚧
+          </motion.div>
+     
         </div>
 
-        <div className="ylm8n hjdn7 fafsg tr64j">
-          <h2 className="sikx1 c9jt8 dark:text-neutral-200">
-            We explore the intersection of creativity, beauty, and faith.
-          </h2>
-
-          <p className="w4xo0 jy5gh dark:text-neutral-500">
-            Craftsmanship matters, too. Our books are lithographically printed,&nbsp;on a 15 pt cover with soft-touch aqueous coating and 80# uncoated text. It's printed by our friends at Hemlock printers, one of Canada's most environmentally friendly printing factories. Simply put, it's the best quality out there.
-          </p>
-        </div>
-
-        <div className="ylm8n hjdn7 fafsg tr64j">
-          <div className="w-full xksvn tfa1w pb094 dark:bg-neutral-700">
-            <img className="fp3m4 x1s1r pb094" src="https://images.unsplash.com/photo-1585157603875-17aacca6182a?q=80&w=3606&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hero Image" />
-          </div>
-
-          <div className="w-full xksvn tfa1w pb094 dark:bg-neutral-700">
-            <img className="fp3m4 x1s1r pb094" src="https://images.unsplash.com/photo-1585157603822-6ea06da9a49a?q=80&w=3379&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hero Image" />
-          </div>
-        </div>
-
-        <p className="w4xo0 jy5gh dark:text-neutral-500">
-          Japanese art continues to inspire contemporary artists and designers worldwide, with its timeless principles of balance, harmony, and attention to detail. The influence of Japanese aesthetics can be seen in everything from modern architecture to digital design, demonstrating the enduring power of these traditional art forms.
-        </p>
-
-        <div className="w-full taag7 tfa1w pb094 dark:bg-neutral-700">
-          <img className="fp3m4 x1s1r pb094" src="https://images.unsplash.com/photo-1580136607983-ec9577fd9072?q=80&w=768&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hero Image" />
-        </div>
-
-        <div className="ylm8n hjdn7 fafsg tr64j">
-          <div className="e36gq">
-            <div className="relative before:absolute before:top-2.5 before:-start-5 before:w-3 before:h-[1.5px] before:bg-gray-800 dark:before:neutral-200">
-              <h4 className="sikx1 c9jt8 dark:text-neutral-200">
-                Books
-              </h4>
-            </div>
-            <p className="w4xo0 jy5gh dark:text-neutral-500">This book is 96 pages, perfect bound, and printed in full color.</p>
-          </div>
-
-          <div className="e36gq">
-            <div className="relative before:absolute before:top-2.5 before:-start-5 before:w-3 before:h-[1.5px] before:bg-gray-800 dark:before:neutral-200">
-              <h4 className="sikx1 c9jt8 dark:text-neutral-200">
-                Notebooks
-              </h4>
-            </div>
-            <p className="w4xo0 jy5gh dark:text-neutral-500">Japanese high-grade acid-free paper.</p>
-          </div>
-
-          <div className="e36gq">
-            <div className="relative before:absolute before:top-2.5 before:-start-5 before:w-3 before:h-[1.5px] before:bg-gray-800 dark:before:neutral-200">
-              <h4 className="sikx1 c9jt8 dark:text-neutral-200">
-                Manuscripts
-              </h4>
-            </div>
-            <p className="w4xo0 jy5gh dark:text-neutral-500">A beautifully designed manuscript of Genesis.</p>
-          </div>
-
-          <div className="e36gq">
-            <div className="relative before:absolute before:top-2.5 before:-start-5 before:w-3 before:h-[1.5px] before:bg-gray-800 dark:before:neutral-200">
-              <h4 className="sikx1 c9jt8 dark:text-neutral-200">
-                Artwork
-              </h4>
-            </div>
-            <p className="w4xo0 jy5gh dark:text-neutral-500">Products are made custom to order.</p>
-          </div>
-        </div>
-
-        <div className="w-full taag7 tfa1w pb094 dark:bg-neutral-700">
-          <img className="fp3m4 x1s1r pb094" src="https://images.unsplash.com/photo-1577083862054-7324cd025fa6?q=80&w=768&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hero Image" />
-        </div>
-
-        <h2 className="sikx1 c9jt8 dark:text-neutral-200">
-          What we believe...
+        {/* Subheading with animated dots */}
+        <h2 className="text-sm md:text-sm font-semibold text-gray-300 mb-8">
+          Working on the Blog Page{dots}
         </h2>
 
-        <p className="w4xo0 jy5gh dark:text-neutral-500">
-          Quality is at the heart of everything we do. Each book is meticulously crafted using premium materials - featuring a 15 pt cover with luxurious soft-touch aqueous coating and 80# uncoated text stock.
+        {/* Progress bar */}
+        <div className="w-full max-w-md mx-auto mb-10">
+          <div className="bg-gray-800 rounded-full h-3 overflow-hidden">
+            <motion.div
+              initial={{ width: "0%" }}
+              animate={{ width: "75%" }}
+              transition={{ duration: 1.2 }}
+              className="h-full rounded-full bg-gradient-to-r from-green-400 via-white to-gray-400 animate-pulse"
+            ></motion.div>
+          </div>
+          <p className="text-sm text-gray-400 mt-2">75% Complete</p>
+        </div>
+
+        {/* Call to action */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Link to="/" className="w-full sm:w-auto s1lil s53ws sfv8v inline-flex jkwm1 items-center n9hej w4xo0 cnneu m74u5 rsdjd azddh y73k3 kew0r xengx focus:outline-hidden f9dn7 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800 dark:hover:bg-neutral-200" href="#">
+              Go Back Home
+              <svg className="e731n h6zia" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </Link>
+        </div>
+
+        {/* Footer message */}
+        <p className="text-sm text-gray-400 mt-10">
+          Thanks for your patience ✨ I am working hard to bring you something amazing.
         </p>
-      </div>
+      </motion.div>
     </div>
+  );
+};
 
-
-   
-   </>
-  )
-}
-
-export default WorkContainer
+export default WorkContainer;

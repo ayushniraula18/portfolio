@@ -1,4 +1,3 @@
-import React from 'react';
 
 const projectsData = [
   {
@@ -46,6 +45,7 @@ const Project = () => {
         <h2 className="r4xgm sikx1 c9jt8 dark:text-neutral-200">
           Projects
         </h2>
+        
 
         <div className="ylm8n dzapa uffu7 o4ndh">
           {projectsData.map((project, index) => (
@@ -69,6 +69,24 @@ const Project = () => {
               </div>
             </a>
           ))}
+        </div>
+         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="text-center p-4 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 border border-blue-200 dark:border-blue-800">
+            <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">11</div>
+            <div className="text-sm text-blue-700 dark:text-blue-300 mt-1">Total Projects</div>
+          </div>
+          <div className="text-center p-4 rounded-xl bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 border border-green-200 dark:border-green-800">
+            <div className="text-2xl font-bold text-green-600 dark:text-green-400">9</div>
+            <div className="text-sm text-green-700 dark:text-green-300 mt-1">Live Systems</div>
+          </div>
+          <div className="text-center p-4 rounded-xl bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 border border-purple-200 dark:border-purple-800">
+            <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">5+</div>
+            <div className="text-sm text-purple-700 dark:text-purple-300 mt-1">Technologies</div>
+          </div>
+          <div className="text-center p-4 rounded-xl bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 border border-orange-200 dark:border-orange-800">
+            <div className="text-2xl font-bold text-orange-600 dark:text-orange-400">100%</div>
+            <div className="text-sm text-orange-700 dark:text-orange-300 mt-1">Uptime</div>
+          </div>
         </div>
       </div>
     </>

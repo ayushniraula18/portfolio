@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, NavLink } from "react-router";
 
 const Header = () => {
@@ -7,29 +6,21 @@ const Header = () => {
       <header className="yhsdv fuv09 e33ca flex flex-wrap qxd8q md:flex-nowrap wu22o w-full w4xo0">
         <nav className="jl6n6 relative vwt7a w-full aqyoh rsdjd lnk45 fppcz mppif flex flex-wrap md:flex-nowrap items-center ox2cl vyel6 srbq1 ek60e sm:mx-auto dark:bg-neutral-900 dark:border-neutral-700">
           <div className="flex items-center">
-  <Link to="/" className="inline-flex items-center gap-2 font-extrabold text-xl text-gray-900 dark:text-white">
-
- 
-  🚀
-</Link>
-
-
-
-
-
-
-
-
-       
+            <Link
+              to="/"
+              className="inline-flex items-center gap-2 font-extrabold text-xl text-gray-900 dark:text-white"
+            >
+              🚀
+            </Link>
           </div>
 
           <div className="flex items-center v1hon q9f0s n28ne">
-            <a
-              className="w-full sm:w-auto s1lil s53ws f2l40 inline-flex jkwm1 items-center n9hej w4xo0 sikx1 kjx0a rsdjd azddh y73k3 kew0r xengx focus:outline-hidden f9dn7 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800 dark:hover:bg-neutral-200"
-              href="#"
+            <Link
+              className="w-full sm:w-auto s1lil s53ws f2l40 inline-flex jkwm1 items-center n9hej w4xo0 sikx1 kjx0a rsdjd azddh y73k3 kew0r xengx focus:outline-hidden fdn7 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800 dark:hover:bg-neutral-200"
+              to="/contact"
             >
               Say Hi 👋
-            </a>
+            </Link>
 
             <div className="md:hidden">
               <button
@@ -82,29 +73,28 @@ const Header = () => {
             aria-labelledby="hs-pro-pnm-collapse"
           >
             <div className="flex flex-col md:flex-row md:items-center nxqoz o4ndh y093e wc6fu nldyy s53ws ek60e uvuvc">
-              <NavLink to="/"
-              className={
-                ({ isActive }) =>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
                   !isActive
                     ? "vf29a bi771 fglch hoxwk iubww q1sdc ttqaw azddh jy5gh mg8vb focus:outline-hidden dark:text-neutral-200 dark:hover:text-neutral-200"
                     : "vf29a bi771 fglch hoxwk iubww q1sdc ttqaw azddh jy5gh mg8vb focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200 fpwsn sikx1 c9jt8 dark:!border-neutral-200 dark:text-neutral-200"
-              }
+                }
                 aria-current="page"
               >
                 Home
               </NavLink>
-               <NavLink to="/work"
-              className={
-                ({ isActive }) =>
+              <NavLink
+                to="/work"
+                className={({ isActive }) =>
                   !isActive
                     ? "vf29a bi771 fglch hoxwk iubww q1sdc ttqaw azddh jy5gh mg8vb focus:outline-hidden dark:text-neutral-200 dark:hover:text-neutral-200"
                     : "vf29a bi771 fglch hoxwk iubww q1sdc ttqaw azddh jy5gh mg8vb focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200 fpwsn sikx1 c9jt8 dark:!border-neutral-200 dark:text-neutral-200"
-              }
+                }
                 aria-current="page"
               >
-                Work
+                Blogs
               </NavLink>
-            
             </div>
           </div>
         </nav>

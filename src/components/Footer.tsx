@@ -7,24 +7,33 @@ const Footer = () => {
       <div className="flex flex-wrap ox2cl items-center o4ndh">
         <div>
           <p className="xs2f2 fd43e dark:text-neutral-400">
-            © 2025 Preline Labs.
-          </p>
+  © 2025 Ayush Niraula | Built with{" "}
+  <span className="inline-block animate-heart">❤️</span>
+</p>
+
+<style>{`
+  @keyframes heartBeat {
+    0%, 40%, 80%, 100% {
+      transform: scale(1);
+    }
+    20%, 60% {
+      transform: scale(1.3);
+    }
+  }
+  .animate-heart {
+    animation: heartBeat 1.5s infinite;
+    display: inline-block;
+  }
+`}</style>
+
         </div>
 
         <ul className="flex flex-wrap items-center">
-          <li className="inline-block relative mi0xb xs2f2 x3yuu last-of-type:before:hidden before:absolute before:top-1/2 before:end-1.5 before:-translate-y-1/2 before:size-[3px] before:rounded-full before:bg-gray-400 dark:text-neutral-500 dark:before:bg-neutral-600">
-            <a className="xs2f2 jy5gh l5oyh mg8vb cua16 focus:outline-hidden lnukb dark:text-neutral-500 dark:hover:text-neutral-400" href="#">
-              X (Twitter)
-            </a>
-          </li>
-          <li className="inline-block relative mi0xb xs2f2 x3yuu last-of-type:before:hidden before:absolute before:top-1/2 before:end-1.5 before:-translate-y-1/2 before:size-[3px] before:rounded-full before:bg-gray-400 dark:text-neutral-500 dark:before:bg-neutral-600">
-            <a className="xs2f2 jy5gh l5oyh mg8vb cua16 focus:outline-hidden lnukb dark:text-neutral-500 dark:hover:text-neutral-400" href="#">
-              Dribbble
-            </a>
-          </li>
+          
+          
           <li className="inline-block mi0xb xs2f2">
             <a className="xs2f2 jy5gh l5oyh mg8vb cua16 focus:outline-hidden lnukb dark:text-neutral-500 dark:hover:text-neutral-400" href="#">
-              Github
+              Download Resume
             </a>
           </li>
           <li className="inline-block">

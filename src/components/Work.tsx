@@ -16,11 +16,13 @@ const Work = () => {
 
             <div className="hlt95 l73lz group-last:pb-0">
               <h3 className="rwumq xs2f2 fd43e dark:text-neutral-400">
-                Present - June 2024
+                Present - June 2024 
               </h3>
 
               <p className="cnneu w4xo0 c9jt8 dark:text-neutral-200">
-                Front-End Team Lead / Full Stack Developer
+                Front-End Team Lead / Full Stack Developer <span className="ml-1 px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs rounded-full font-medium">
+                        Currently Working
+                      </span>
               </p>
 
               <p className="rwavo w4xo0 fd43e dark:text-neutral-400">

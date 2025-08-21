@@ -1,6 +1,42 @@
-import React from "react";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+const skills = [
+  // Frontend
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Github",
+  "Angular",
+  "Tailwind CSS",
+  "Bootstrap",
+
+  // Backend
+  "Node.js",
+  "Express.js",
+  "REST APIs",
+
+  // Databases
+  "MongoDB",
+  "MySQL",
+
+  // DevOps / Tools
+  "Git",
+
+
+  "Jira",
+  "Problem Solving",
+];
+  const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSkillIndex((prev:any) => (prev + 1) % skills.length);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [skills.length]);
   return (
     <>
       <div className="flex items-center vyfcq">
@@ -130,11 +166,30 @@ const Hero = () => {
         <div className="hlt95">
           <h1 className="tbkeq sikx1 c9jt8 dark:text-neutral-200">
             Ayush Niraula
+           
           </h1>
           <p className="w4xo0 fd43e dark:text-neutral-400">
             Software Engineer / Full Stack Developer{" "}
           </p>
-          <small className="dark:text-green-400 dark:font-semibold">Node.js · React · Angular · Express · MongoDB · Git </small>
+          {/* Animated skills display */}
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-sm text-neutral-600 dark:text-neutral-500">Specializing in:</span>
+            <div className="relative h-6 w-20 overflow-hidden">
+              <div 
+                className="absolute transition-transform duration-500 ease-in-out"
+                style={{ transform: `translateY(-${currentSkillIndex * 24}px)` }}
+              >
+                {skills.map((skill) => (
+                  <div 
+                    key={skill}
+                    className="h-6 flex items-center text-sm font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+                  >
+                    {skill}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         
 
         </div>
@@ -158,134 +213,134 @@ const Hero = () => {
           intelligent systems that drive real-world impact.
         </p>
 
-        <ul className="chaem grid grid-cols-1 md:grid-cols-2 gap-4 cufq3">
-  {/* Email */}
-  <li className="flex items-center uq0ux">
-    <svg
-      className="e731n h6zia c9jt8 dark:text-neutral-200"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect width="20" height="16" x="2" y="4" rx="2" />
-      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-    </svg>
-    <a
-      className="z4zqw jy5gh l5oyh mg8vb cua16 focus:outline-hidden lnukb dark:text-neutral-500 dark:hover:text-neutral-400"
-      href="mailto:ayushniraula18@gmail.com"
-    >
-      ayushniraula18@gmail.com
-    </a>
-  </li>
+      <ul className="chaem grid grid-cols-1 md:grid-cols-2 gap-4 cufq3 mt-8">
+          {/* Email */}
+          <li className="flex items-center uq0ux group hover:bg-blue-50 dark:hover:bg-blue-900/10  rounded-lg transition-all duration-300 hover:scale-105">
+            <svg
+              className="e731n h6zia c9jt8 dark:text-neutral-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            <a
+              className="z4zqw jy5gh l5oyh mg8vb cua16 focus:outline-hidden lnukb dark:text-neutral-500 dark:hover:text-neutral-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300"
+              href="mailto:ayushniraula18@gmail.com"
+            >
+              ayushniraula18@gmail.com
+            </a>
+          </li>
 
-  {/* Phone */}
-  <li className="flex items-center uq0ux">
-    <svg
-      className="e731n h6zia c9jt8 dark:text-neutral-200"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.1 5.18 2 2 0 0 1 5.11 3h3a2 2 0 0 1 2 1.72c.12.81.37 1.59.72 2.32a2 2 0 0 1-.45 2.11L9.09 9.91a16 16 0 0 0 5 5l.76-.76a2 2 0 0 1 2.11-.45c.73.35 1.51.6 2.32.72a2 2 0 0 1 1.72 2z" />
-    </svg>
-    <a
-      className="z4zqw jy5gh l5oyh mg8vb cua16 focus:outline-hidden lnukb dark:text-neutral-500 dark:hover:text-neutral-400"
-      href="tel:+9779861281996"
-    >
-      +977 9861281996
-    </a>
-  </li>
+          {/* Phone */}
+          <li className="flex items-center uq0ux group hover:bg-green-50 dark:hover:bg-green-900/10  rounded-lg transition-all duration-300 hover:scale-105">
+            <svg
+              className="e731n h6zia c9jt8 dark:text-neutral-200 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors duration-300"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.1 5.18 2 2 0 0 1 5.11 3h3a2 2 0 0 1 2 1.72c.12.81.37 1.59.72 2.32a2 2 0 0 1-.45 2.11L9.09 9.91a16 16 0 0 0 5 5l.76-.76a2 2 0 0 1 2.11-.45c.73.35 1.51.6 2.32.72a2 2 0 0 1 1.72 2z" />
+            </svg>
+            <a
+              className="z4zqw jy5gh l5oyh mg8vb cua16 focus:outline-hidden lnukb dark:text-neutral-500 dark:hover:text-neutral-400 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors duration-300"
+              href="tel:+9779861281996"
+            >
+              +977 9861281996
+            </a>
+          </li>
 
-  {/* Instagram */}
-  <li className="flex items-center uq0ux">
-    <svg
-      className="e731n h6zia c9jt8 dark:text-neutral-200"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-    </svg>
-    <a
-      className="z4zqw jy5gh l5oyh mg8vb cua16 focus:outline-hidden lnukb dark:text-neutral-500 dark:hover:text-neutral-400"
-      href="https://instagram.com/the.ayush.niraula"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      @the.ayush.niraula
-    </a>
-  </li>
+          {/* Instagram */}
+          <li className="flex items-center uq0ux group hover:bg-pink-50 dark:hover:bg-pink-900/10  rounded-lg transition-all duration-300 hover:scale-105">
+            <svg
+              className="e731n h6zia c9jt8 dark:text-neutral-200 group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors duration-300"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+            <a
+              className="z4zqw jy5gh l5oyh mg8vb cua16 focus:outline-hidden lnukb dark:text-neutral-500 dark:hover:text-neutral-400 group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors duration-300"
+              href="https://instagram.com/the.ayush.niraula"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @the.ayush.niraula
+            </a>
+          </li>
 
-  {/* GitHub */}
-  <li className="flex items-center uq0ux">
-    <svg
-      className="e731n h6zia c9jt8 dark:text-neutral-200"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M9 19c-4.5 1.5-4.5-2.5-6-3m12 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 18 4.77 5.07 5.07 0 0 0 17.91 1S16.73.65 14 2.48a13.38 13.38 0 0 0-10 0C1.27.65.09 1 .09 1A5.07 5.07 0 0 0 0 4.77c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 0 0-.94 2.61V22" />
-    </svg>
-    <a
-      className="z4zqw jy5gh l5oyh mg8vb cua16 focus:outline-hidden lnukb dark:text-neutral-500 dark:hover:text-neutral-400"
-      href="https://github.com/ayushniraula18"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      github.com/ayushniraula18
-    </a>
-  </li>
+          {/* GitHub */}
+          <li className="flex items-center uq0ux group hover:bg-purple-50 dark:hover:bg-purple-900/10  rounded-lg transition-all duration-300 hover:scale-105">
+            <svg
+              className="e731n h6zia c9jt8 dark:text-neutral-200 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M9 19c-4.5 1.5-4.5-2.5-6-3m12 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 18 4.77 5.07 5.07 0 0 0 17.91 1S16.73.65 14 2.48a13.38 13.38 0 0 0-10 0C1.27.65.09 1 .09 1A5.07 5.07 0 0 0 0 4.77c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 0 0-.94 2.61V22" />
+            </svg>
+            <a
+              className="z4zqw jy5gh l5oyh mg8vb cua16 focus:outline-hidden lnukb dark:text-neutral-500 dark:hover:text-neutral-400 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300"
+              href="https://github.com/ayushniraula18"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/ayushniraula18
+            </a>
+          </li>
 
-  {/* LinkedIn */}
-  <li className="flex items-center uq0ux">
-    <svg
-      className="e731n h6zia c9jt8 dark:text-neutral-200"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-    >
-      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2h0a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-      <rect x="2" y="9" width="4" height="12" />
-      <circle cx="4" cy="4" r="2" />
-    </svg>
-    <a
-      className="z4zqw jy5gh l5oyh mg8vb cua16 focus:outline-hidden lnukb dark:text-neutral-500 dark:hover:text-neutral-400"
-      href="https://linkedin.com/in/ayush-niraula-b70876198"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      linkedin.com/in/ayush-niraula-b70876198
-    </a>
-  </li>
-</ul>
+          {/* LinkedIn */}
+          <li className="flex items-center uq0ux group hover:bg-blue-50 dark:hover:bg-blue-900/10  rounded-lg transition-all duration-300 hover:scale-105">
+            <svg
+              className="e731n h6zia c9jt8 dark:text-neutral-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2h0a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            <a
+              className="z4zqw jy5gh l5oyh mg8vb cua16 focus:outline-hidden lnukb dark:text-neutral-500 dark:hover:text-neutral-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300"
+              href="https://linkedin.com/in/ayush-niraula-b70876198"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/ayush-niraula-b70876198
+            </a>
+          </li>
+        </ul>
 
 
       </div>

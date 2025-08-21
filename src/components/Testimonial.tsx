@@ -12,7 +12,7 @@ const Testimonial = () => {
           <div className="hfus2 db8e5 or0yw">
             <blockquote>
               <span className="w4xo0 c9jt8 dark:text-neutral-200">
-                I had the pleasure of mentoring Ayush during his time at MyPay. 
+                I had the pleasure of mentoring Ayush and 
                 His strong command over the MERN stack, ability to design scalable 
                 solutions, and eagerness to learn set him apart. Ayush not only 
                 delivers quality code but also contributes ideas that improve the 

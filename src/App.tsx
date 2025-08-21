@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MainContainter from "./components/MainContainter";
 import WorkContainer from "./components/WorkContainer";
+import Contact from "./components/main/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
        <Routes>
       <Route path="/" element={<MainContainter />} />
       <Route path="/work" element={<WorkContainer />} />
+      <Route path="/contact" element={<Contact />} />
 
       <Route path="*" element={<h1>404</h1>} />
     </Routes>

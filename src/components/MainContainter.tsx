@@ -18,8 +18,10 @@ const MainContainter = () => {
           <Skill />
           <Work />
           <Education />
-          <Article />
-          <Contact />
+          {/* <Article /> */}
+          {/* <Contact /> */}
+          <br />
+          <br />
         </div>
       </main>
     </>
