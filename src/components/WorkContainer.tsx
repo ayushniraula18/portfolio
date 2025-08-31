@@ -58,7 +58,7 @@ const WorkContainer = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link to="/" className="w-full sm:w-auto s1lil s53ws sfv8v inline-flex jkwm1 items-center n9hej w4xo0 cnneu m74u5 rsdjd azddh y73k3 kew0r xengx focus:outline-hidden f9dn7 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800 dark:hover:bg-neutral-200" href="#">
               Go Back Home
-              <svg className="e731n h6zia" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg className="e731n h6zia" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
               </svg>
