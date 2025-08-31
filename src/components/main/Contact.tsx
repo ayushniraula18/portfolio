@@ -32,7 +32,7 @@ const Contact = () => {
  <main id="content">
         <div className="w-full vwt7a mx-auto be37 fglch xf1r4 ids43">
 
-    <div className="m1axg uo8pm">
+    <div className="m1axg uo8pm min-h-screen">
         <h2 className="n8xpr sikx1 c9jt8 dark:text-neutral-200 mb-8">
         Say Hi 👋
       </h2>
@@ -41,7 +41,7 @@ const Contact = () => {
             <div className="relative w-full">
               <label htmlFor="hero-input" className="et50x">Subscribe</label>
               <div className="absolute rm8lf gihcw flex items-center gxxgf gbcuh yuavq">
-                <svg className="e731n b9gop rr36x dark:text-neutral-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg className="e731n b9gop rr36x dark:text-neutral-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round">
                   <rect width="20" height="16" x="2" y="4" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
@@ -54,7 +54,7 @@ const Contact = () => {
             <div className="relative w-full">
               <label htmlFor="hero-input" className="et50x">Subscribe</label>
               <div className="absolute rm8lf gihcw flex items-center gxxgf gbcuh yuavq">
-                <svg className="e731n b9gop rr36x dark:text-neutral-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg className="e731n b9gop rr36x dark:text-neutral-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round">
                   <rect width="20" height="16" x="2" y="4" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
@@ -63,7 +63,7 @@ const Contact = () => {
             </div>
             <a className="w-full sm:w-auto s1lil s53ws sfv8v inline-flex jkwm1 items-center n9hej w4xo0 cnneu m74u5 rsdjd azddh y73k3 kew0r xengx focus:outline-hidden f9dn7 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800 dark:hover:bg-neutral-200" href="#">
               Send
-              <svg className="e731n h6zia" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg className="e731n h6zia" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
               </svg>
