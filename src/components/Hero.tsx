@@ -169,7 +169,7 @@ const skills = [
            
           </h1>
           <p className="w4xo0 fd43e dark:text-neutral-400">
-            Software Engineer / Full Stack Developer{" "}
+            Software Engineer / Full Stack Engineer{" "}
           </p>
           {/* Animated skills display */}
           <div className="flex items-center gap-2 mb-2">

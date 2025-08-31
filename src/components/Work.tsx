@@ -20,7 +20,7 @@ const Work = () => {
               </h3>
 
               <p className="cnneu w4xo0 c9jt8 dark:text-neutral-200">
-                Front-End Team Lead / Full Stack Developer <span className="ml-1 px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs rounded-full font-medium">
+                Front-End Team Lead / Full Stack Engineer <span className="ml-1 px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs rounded-full font-medium">
                         Currently Working
                       </span>
               </p>

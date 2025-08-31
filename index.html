@@ -1,83 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- ========== META ========== -->
+    <!-- ✅ Character encoding -->
     <meta charset="utf-8" />
+
+    <!-- ✅ Mobile-friendly -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
+    <!-- ✅ Robots control -->
     <meta
       name="robots"
       content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
     />
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://ayushniraula.com.np/" />
+    <!-- ✅ Canonical -->
+    <link rel="canonical" href="https://ayushniraula.com/" />
 
-    <!-- SEO -->
-    <title>Ayush Niraula | Software Engineer & Full Stack Developer</title>
+    <!-- ✅ SEO -->
+    <title>Ayush Niraula | Software Engineer & Full Stack Engineer</title>
     <meta
       name="description"
-      content="Portfolio of Ayush Niraula — Software Engineer and Full Stack Developer. Explore my work experience, projects, skills, and achievements in web development, Angular, React, Node.js, and more."
+      content="Portfolio of Ayush Niraula — Software Engineer and Full Stack Engineer. Explore my work experience, projects, skills, and achievements in web development, Angular, React, Node.js, and more."
+    />
+    <meta name="author" content="Ayush Niraula" />
+    <meta
+      name="keywords"
+      content="Ayush Niraula, Software Engineer, Full Stack Engineer, React, Angular, Node.js, Portfolio, Web Developer Nepal"
     />
 
-    <!-- Open Graph (Facebook / LinkedIn) -->
+    <!-- ✅ Open Graph (Facebook / LinkedIn) -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ayushniraula.com.np/" />
+    <meta property="og:url" content="https://ayushniraula.com/" />
     <meta property="og:site_name" content="Ayush Niraula Portfolio" />
     <meta property="og:locale" content="en_US" />
     <meta
       property="og:title"
-      content="Ayush Niraula | Software Engineer & Full Stack Developer"
+      content="Ayush Niraula | Software Engineer & Full Stack Engineer"
     />
     <meta
       property="og:description"
-      content="Discover the portfolio of Ayush Niraula — Full Stack Developer experienced in Angular, React, Node.js, and scalable web applications."
+      content="Discover the portfolio of Ayush Niraula — Full Stack Engineer experienced in Angular, React, Node.js, and scalable web applications."
     />
-    <meta
-      property="og:image"
-      content="https://ayushniraula.com.np/assets/img/preview.png"
-    />
+    <meta property="og:image" content="/public/favicon.ico" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@the.ayush.niraula" />
-    <meta name="twitter:creator" content="@the.ayush.niraula" />
-    <meta
-      name="twitter:title"
-      content="Ayush Niraula | Software Engineer & Full Stack Developer"
-    />
-    <meta
-      name="twitter:description"
-      content="Portfolio of Ayush Niraula — Software Engineer and Full Stack Developer specializing in scalable web applications, Angular, React, Node.js, and modern technologies."
-    />
-    <meta
-      name="twitter:image"
-      content="https://ayushniraula.com.np/assets/img/preview.png"
-    />
+    <!-- ✅ Favicon (include multiple sizes for devices) -->
+    <link rel="icon" href="/public/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-
-    <!-- Fonts -->
+    <!-- ✅ Fonts (with performance optimization) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Preline CSS -->
-    <link
-      rel="stylesheet"
-      href="https://preline.co/assets/css/obfuscated.min.css?v=3.0.1"
-    />
+    <!-- ✅ Styles -->
+    <link rel="stylesheet" href="/css/obfuscated.css" />
 
-    <!-- Theme Mode (Light/Dark) -->
+    <!-- ✅ Structured Data (JSON-LD for better SEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ayush Niraula",
+        "url": "https://ayushniraula.com/",
+        "image": "/public/favicon.ico",
+        "sameAs": [
+          "https://github.com/ayushniraula18",
+          "https://linkedin.com/in/ayush-niraula-18-link"
+        ],
+        "jobTitle": "Software Engineer & Full Stack Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance"
+        }
+      }
+    </script>
+
+    <!-- ✅ Theme Mode (Light/Dark) -->
     <script>
       const html = document.documentElement;
       const theme = localStorage.getItem("hs_theme") || "auto";
 
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
       const isDark = theme === "dark" || (theme === "auto" && prefersDark);
       const isLight = theme === "light" || (theme === "auto" && !prefersDark);
 
@@ -89,21 +101,35 @@
   <body>
     <div id="root"></div>
 
-    <!-- JS Plugins -->
-    <script src="https://preline.co/assets/vendor/preline/dist/index.js?v=3.0.1"></script>
-    <script src="https://preline.co/assets/vendor/clipboard/dist/clipboard.min.js"></script>
-    <script src="https://preline.co/assets/js/hs-copy-clipboard-helper.js"></script>
+    <!-- ✅ JS Plugins (defer for performance) -->
+    <script
+      src="/public/js/index.js"
+      defer
+    ></script>
+    <script
+      src="/public/js/clipboard.js"
+      defer
+    ></script>
+    <script
+      src="/public/js/clipboard-helper.js"
+      defer
+    ></script>
 
-    <!-- Analytics (Google Tag Manager) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <!-- ✅ Analytics (Google Tag Manager) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag("js", new Date());
       gtag("config", "G-XXXXXXX");
     </script>
 
-    <!-- App -->
+    <!-- ✅ App entry -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

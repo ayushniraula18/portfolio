@@ -205,14 +205,14 @@ const Contact = () => {
                 </div>
 
                 <div className="p-6 bg-gradient-to-br from-blue-50/50 to-purple-50/50 dark:from-blue-900/10 dark:to-purple-900/10 rounded-lg border border-gray-200 dark:border-neutral-700">
-                  <p className="text-sm text-gray-600 dark:text-neutral-400 mb-2">
-                    <span className="font-semibold">Response Time:</span>{" "}
+                  <small className=" text-gray-600 dark:text-neutral-400 mb-2">
+                    <span className="underline">Response Time</span>{" "}:
                     Usually within 24 hours
-                  </p>
-                  <p className="text-sm text-gray-600 dark:text-neutral-400">
-                    <span className="font-semibold">Availability:</span> Open
+                  </small><br />
+                  <small className=" text-gray-600 dark:text-neutral-400">
+                    <span className="underline">Availability</span>{" "}: Open
                     for freelance projects and collaborations
-                  </p>
+                  </small>
                 </div>
               </div>
             </div>
