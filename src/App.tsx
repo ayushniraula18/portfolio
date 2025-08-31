@@ -5,12 +5,14 @@ import Header from "./components/Header";
 import MainContainter from "./components/MainContainter";
 import WorkContainer from "./components/WorkContainer";
 import Contact from "./components/main/Contact";
+import ScrollToTop from "./components/shared/ScrollToTop";
 
 function App() {
   return (
     <>
       <section className="dark:bg-neutral-900">
         <Header />
+        <ScrollToTop/>
        <Routes>
       <Route path="/" element={<MainContainter />} />
       <Route path="/work" element={<WorkContainer />} />

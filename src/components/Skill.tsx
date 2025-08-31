@@ -37,6 +37,10 @@ const Skill = () => {
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ESLint_logo.svg/1200px-ESLint_logo.svg.png" alt="ESLint" className="w-5 h-5 transition-transform duration-300 hover:scale-110" />
                   <small className="font-medium">ESLint</small>
                 </li>
+                <li className="xun2e inline-flex items-center gap-2 w4xo0 c9jt8 dark:text-neutral-200 px-3 py-2 rounded-lg bg-neutral-50 dark:bg-neutral-800/50 transition-all duration-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 hover:shadow-md hover:-translate-y-0.5 hover:scale-105 cursor-default">
+                  <img src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png" alt="ESLint" className="w-5 h-5 transition-transform duration-300 hover:scale-110" />
+                  <small className="font-medium">MySQL</small>
+                </li>
               </ul>
             </dd>
           </dl>

@@ -207,7 +207,7 @@ const skills = [
 
         <p className="wc6fu w4xo0 fd43e dark:text-neutral-400">
           I’m passionate about innovation and continuously expanding my
-          knowledge in Machine Learning and Artificial Intelligence. With a
+          knowledge in Machine Learning and Artificial Intelligence as well. With a
           strong foundation in engineering and real-world project experience, I
           love exploring new technologies to bridge software development with
           intelligent systems that drive real-world impact.
@@ -333,11 +333,11 @@ const skills = [
             </svg>
             <a
               className="z4zqw jy5gh l5oyh mg8vb cua16 focus:outline-hidden lnukb dark:text-neutral-500 dark:hover:text-neutral-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300"
-              href="https://linkedin.com/in/ayush-niraula-b70876198"
+              href="https://www.linkedin.com/in/ayush-niraula-18-link/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              linkedin.com/in/ayush-niraula-b70876198
+              linkedin.com/in/ayush-niraula-18-link
             </a>
           </li>
         </ul>
