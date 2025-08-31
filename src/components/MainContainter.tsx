@@ -7,8 +7,12 @@ import Skill from "./Skill";
 import Testimonial from "./Testimonial";
 import Hero from "./Hero";
 import Project from "./Project";
+type HangingLightSwitchProps = {
+  isOn: any;      // ⚠ Ideally this should be boolean
+  onToggle: any;  // ⚠ Ideally this should be () => void
+};
 
-const HangingLightSwitch = ({ isOn, onToggle }) => {
+const HangingLightSwitch = ({ isOn, onToggle }:HangingLightSwitchProps) => {
   const [isPulling, setIsPulling] = useState(false);
   const [quote, setQuote] = useState("");
   const [hasClicked, setHasClicked] = useState(false);
@@ -64,6 +68,7 @@ const inspirationalQuotes = [
         sm:left-1/5 sm:-translate-x-1/2
         z-50 
         scale-90 sm:scale-100
+        hidden sm:block
       "
     >
       {/* Ceiling mount */}

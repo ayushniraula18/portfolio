@@ -11,13 +11,14 @@ const skills = [
   "Next.js",
   "Github",
   "Angular",
-  "Tailwind CSS",
+  "Tailwind",
   "Bootstrap",
+
 
   // Backend
   "Node.js",
   "Express.js",
-  "REST APIs",
+  "APIs",
 
   // Databases
   "MongoDB",
@@ -28,7 +29,7 @@ const skills = [
 
 
   "Jira",
-  "Problem Solving",
+  
 ];
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
   useEffect(() => {

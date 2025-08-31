@@ -41,8 +41,8 @@ const Header = () => {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <line x1="3" x2="21" y1="6" y2="6" />
                   <line x1="3" x2="21" y1="12" y2="12" />
@@ -57,8 +57,8 @@ const Header = () => {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <path d="M18 6 6 18" />
                   <path d="m6 6 12 12" />
